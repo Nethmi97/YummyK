@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IngredientCategoryAdd">
+
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Add New Ingredients"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/linear_category_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_category"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/dairy_img"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/dairy"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+
+
+        <ImageView
+            android:id="@+id/vegetables_img"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/vegetables"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/fruits_img"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/fruits"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_category_layout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/choco_img"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/desserts_snacks"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/spices_img"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/spices"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/meats_img"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/meats"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3_category_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2_category_layout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/dairy_oils"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/oils"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/nuts_img"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/nuts"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/seafood_img"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/seafood"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear4_category_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear3_category_layout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1">
+
+    <ImageView
+        android:id="@+id/beverage_img"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/beverages"
+        android:layout_weight="0.33"
+        android:adjustViewBounds="true"
+
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/soup_img"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/soups"
+        android:layout_weight="0.33"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/grains_img"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/grains"
+        android:layout_weight="0.33"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
