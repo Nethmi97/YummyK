@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Conversion">
+
+    <ImageView
+        android:id="@+id/coversion_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/yummy1"
+        tools:ignore="MissingConstraints"></ImageView>
+
+    <EditText
+        android:id="@+id/gram_value"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/inputedittext"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="      Enter value in grammes" />
+
+
+        <RadioButton
+            android:id="@+id/toOunce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert to Ounce" />
+
+        <RadioButton
+            android:id="@+id/toMg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert to Milligrams" />
+
+
+
+            <Button
+                android:id="@+id/convBtnGram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Convert"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/buttons"/>
+
+        <TextView
+            android:id="@+id/gramConvDis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text=""
+            android:textAlignment="center"/>
+
+
+
+    <EditText
+        android:id="@+id/ml_value"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:inputType="number"
+        android:background="@drawable/inputedittext"
+        android:hint="      Enter value in millilitres" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RadioButton
+            android:id="@+id/toPints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert to Pints" />
+
+        <RadioButton
+            android:id="@+id/toCups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert to Cups" />
+
+
+
+        <Button
+            android:id="@+id/convBtnMl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttons"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="Convert" />
+
+        <TextView
+            android:id="@+id/MlConvDis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text=""
+            android:textAlignment="center"/>
+    </RadioGroup>
+
+</LinearLayout>
