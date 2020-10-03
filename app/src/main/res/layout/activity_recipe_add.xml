@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeAddActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/yummy1"
+        tools:ignore="MissingConstraints"></ImageView>
+
+    <ImageView
+        android:id="@+id/recipe_image"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/logo"
+        android:src="@drawable/image_upload"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/recipeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputedittext"
+        android:layout_below="@id/recipe_image"
+        android:layout_marginTop="20dp"
+        android:hint="Recipe name"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:height="60dp"/>
+    <EditText
+        android:id="@+id/ingredientList"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/inputedittext"
+        android:layout_below="@id/recipeName"
+        android:layout_marginTop="5dp"
+        android:hint="Ingredients"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:height="60dp"/>
+    <EditText
+        android:id="@+id/recipe_method"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/inputedittext"
+        android:layout_below="@id/ingredientList"
+        android:layout_marginTop="5dp"
+        android:hint="Method"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:height="60dp"/>
+    <EditText
+        android:id="@+id/recipe_portion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputedittext"
+        android:layout_below="@id/recipe_method"
+        android:layout_marginTop="5dp"
+        android:hint="Portion size"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:height="60dp"/>
+
+    <Button
+        android:id="@+id/add_recipe_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recipe_portion"
+        android:text="Add Recipe"
+        android:padding="17dp"
+        android:layout_marginTop="40dp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/buttons"
+        />
+
+
+</RelativeLayout>
